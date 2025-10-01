@@ -1,7 +1,7 @@
 {
   "name": "react-native-shared-element-transition",
   "version": "1.0.0",
-  "description": "A React Native library for smooth shared element transitions between screens",
+  "description": "🎯 Smooth shared element transitions for React Native - works with Expo Router and all navigation libraries. Built with Reanimated for 60fps performance.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -36,10 +36,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/upayee/react-native-shared-element-transition.git"
+    "url": "https://github.com/NuZard84/react-native-shared-element-transition.git"
   },
   "bugs": {
-    "url": "https://github.com/upayee/react-native-shared-element-transition/issues"
+    "url": "https://github.com/NuZard84/react-native-shared-element-transition/issues"
   },
-  "homepage": "https://github.com/upayee/react-native-shared-element-transition#readme"
+  "homepage": "https://github.com/NuZard84/react-native-shared-element-transition#readme"
 }
