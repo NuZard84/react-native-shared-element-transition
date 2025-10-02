@@ -1,6 +1,6 @@
-export { SharedElement } from "./components/SharedElement";
+export { SharedView } from "./components/SharedView";
 export {
-  SharedElementProvider,
-  useSharedElement,
-} from "./contexts/SharedElementContext";
-export type { SharedElementProps } from "./components/SharedElement";
+  SharedViewProvider,
+  useSharedView,
+} from "./contexts/SharedViewContext";
+export type { SharedViewProps } from "./components/SharedView";

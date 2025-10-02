@@ -1,7 +1,7 @@
 {
-  "name": "react-native-shared-element-transition",
-  "version": "1.0.0",
-  "description": "🎯 Smooth shared element transitions for React Native - works with Expo Router and all navigation libraries. Built with Reanimated for 60fps performance.",
+  "name": "react-native-shared-view-transition",
+  "version": "1.0.1",
+  "description": "A React Native library for smooth shared view transitions between screens using React Native Reanimated",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -9,7 +9,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "node scripts/build.js",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,25 +21,25 @@
     "navigation",
     "expo"
   ],
-  "author": "Upayee Team",
+  "author": "Your Name <your.email@example.com>",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-native": ">=0.60.0",
-    "react-native-reanimated": ">=2.0.0"
+    "react-native-reanimated": ">=2.0.0",
+    "expo-router": ">=2.0.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.0",
+    "@types/react": "^18.0.0",
     "@types/react-native": "^0.72.0",
-    "react-native-reanimated": "^3.0.0",
     "typescript": "^5.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NuZard84/react-native-shared-element-transition.git"
+    "url": "https://github.com/yourusername/react-native-shared-element-transition.git"
   },
   "bugs": {
-    "url": "https://github.com/NuZard84/react-native-shared-element-transition/issues"
+    "url": "https://github.com/yourusername/react-native-shared-element-transition/issues"
   },
-  "homepage": "https://github.com/NuZard84/react-native-shared-element-transition#readme"
+  "homepage": "https://github.com/yourusername/react-native-shared-element-transition#readme"
 }
