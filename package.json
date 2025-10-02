@@ -37,10 +37,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/react-native-shared-element-transition.git"
+    "url": "https://github.com/NuZard84/react-native-shared-view-transition.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/react-native-shared-element-transition/issues"
+    "url": "https://github.com/NuZard84/react-native-shared-view-transition/issues"
   },
-  "homepage": "https://github.com/yourusername/react-native-shared-element-transition#readme"
+  "homepage": "https://github.com/NuZard84/react-native-shared-view-transition#readme"
 }

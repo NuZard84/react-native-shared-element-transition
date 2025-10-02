@@ -11,7 +11,7 @@ This guide helps you create and add demo videos to showcase your shared view tra
 ```markdown
 ## 🎬 Demo Video
 
-[![Demo Video](https://img.shields.io/badge/📹_Watch_Demo-17s_MP4-blue?style=for-the-badge)](./sample-vid.mp4)
+[![Demo Video](https://img.shields.io/badge/📹_Watch_Demo-17s_MP4-blue?style=for-the-badge)](https://github.com/NuZard84/react-native-shared-view-transition/blob/main/sample-vid.mp4)
 ```
 
 ## Recording Tips

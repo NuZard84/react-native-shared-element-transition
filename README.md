@@ -8,7 +8,7 @@ A React Native library for smooth shared view transitions between screens using 
 
 **Watch the library in action!**
 
-[![Demo Video](https://img.shields.io/badge/📹_Watch_Demo-17s_MP4-blue?style=for-the-badge)](https://github.com/yourusername/react-native-shared-view-transition/blob/main/sample-vid.mp4)
+[![Demo Video](https://img.shields.io/badge/📹_Watch_Demo-17s_MP4-blue?style=for-the-badge)](https://github.com/NuZard84/react-native-shared-view-transition/blob/main/sample-vid.mp4)
 
 _Click the badge above to see smooth shared view transitions in action!_
 
@@ -27,7 +27,7 @@ _Click the badge above to see smooth shared view transitions in action!_
 
 See the library in action! Watch this 17-second demo video showing smooth shared view transitions:
 
-https://github.com/yourusername/react-native-shared-view-transition/blob/main/sample-vid.mp4
+https://github.com/NuZard84/react-native-shared-view-transition/blob/main/sample-vid.mp4
 
 _The video demonstrates smooth card transitions between list and detail views, showcasing the library's seamless animations._
 
