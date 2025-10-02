@@ -7,7 +7,7 @@
   "files": [
     "lib",
     "README.md",
-    "sample-vid.mp4"
+    "sample-vid.gif"
   ],
   "scripts": {
     "build": "node scripts/build.js",
