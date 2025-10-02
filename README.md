@@ -4,6 +4,14 @@ A React Native library for smooth shared view transitions between screens using 
 
 > **Why this library?** I tried to find a working shared view transition library for file-based Expo Router but couldn't find one that worked properly, so I created this one specifically for Expo Router with file-based routing.
 
+## 🎬 Demo Video
+
+**Watch the library in action!**
+
+[![Demo Video](https://img.shields.io/badge/📹_Watch_Demo-17s_MP4-blue?style=for-the-badge)](https://github.com/yourusername/react-native-shared-view-transition/blob/main/sample-vid.mp4)
+
+_Click the badge above to see smooth shared view transitions in action!_
+
 ## Features
 
 - 🎯 **Smooth Animations**: Create beautiful shared view transitions between screens
@@ -14,6 +22,14 @@ A React Native library for smooth shared view transitions between screens using 
 - 📦 **Lightweight**: Minimal dependencies
 - 🚀 **Expo Router Compatible**: Works seamlessly with Expo Router navigation
 - 🎭 **Context-Based**: Uses React Context for state management
+
+## Demo
+
+See the library in action! Watch this 17-second demo video showing smooth shared view transitions:
+
+https://github.com/yourusername/react-native-shared-view-transition/blob/main/sample-vid.mp4
+
+_The video demonstrates smooth card transitions between list and detail views, showcasing the library's seamless animations._
 
 ## Installation
 
@@ -511,6 +527,29 @@ REACT_NATIVE_SHARED_ELEMENT_DEBUG=true
 ```
 
 This will log transition events to the console for debugging.
+
+## Creating Demo Videos
+
+To create your own demo video showing the transitions:
+
+1. **Record your app** using screen recording tools:
+
+   - iOS: Built-in screen recording
+   - Android: Built-in screen recording or third-party apps
+   - Simulator: QuickTime Player (iOS) or built-in tools
+
+2. **Show key interactions**:
+
+   - Tap cards to see transitions
+   - Show both grid and list views
+   - Demonstrate smooth animations
+
+3. **Keep it concise**: 15-20 seconds is perfect for showcasing the library
+
+4. **Add to your README**:
+   ```markdown
+   [![Demo Video](https://img.shields.io/badge/📹_Watch_Demo-17s_MP4-blue?style=for-the-badge)](path/to/your/video.mp4)
+   ```
 
 ## Requirements
 

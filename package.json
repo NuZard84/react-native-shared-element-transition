@@ -6,7 +6,8 @@
   "types": "lib/index.d.ts",
   "files": [
     "lib",
-    "README.md"
+    "README.md",
+    "sample-vid.mp4"
   ],
   "scripts": {
     "build": "node scripts/build.js",
