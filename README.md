@@ -1,4 +1,4 @@
-# React Native Shared Element Transition
+# React Native Shared View Transition
 
 A React Native library for smooth shared element transitions between screens using React Native Reanimated. Perfect for creating seamless navigation experiences with shared elements that animate between screens.
 
