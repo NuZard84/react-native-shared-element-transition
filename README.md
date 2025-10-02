@@ -1,12 +1,12 @@
 # React Native Shared View Transition
 
-A React Native library for smooth shared element transitions between screens using React Native Reanimated. Perfect for creating seamless navigation experiences with shared elements that animate between screens.
+A React Native library for smooth shared view transitions between screens using React Native Reanimated. Perfect for creating seamless navigation experiences with shared views that animate between screens.
 
-> **Why this library?** I tried to find a working shared element transition library for file-based Expo Router but couldn't find one that worked properly, so I created this one specifically for Expo Router with file-based routing.
+> **Why this library?** I tried to find a working shared view transition library for file-based Expo Router but couldn't find one that worked properly, so I created this one specifically for Expo Router with file-based routing.
 
 ## Features
 
-- 🎯 **Smooth Animations**: Create beautiful shared element transitions between screens
+- 🎯 **Smooth Animations**: Create beautiful shared view transitions between screens
 - 📱 **Cross-Platform**: Works on both iOS and Android
 - ⚡ **Performance**: Built with React Native Reanimated for 60fps animations
 - 🎨 **Flexible**: Support for move and scale transitions
@@ -18,9 +18,9 @@ A React Native library for smooth shared element transitions between screens usi
 ## Installation
 
 ```bash
-npm install react-native-shared-element-transition
+npm install react-native-shared-view-transition
 # or
-yarn add react-native-shared-element-transition
+yarn add react-native-shared-view-transition
 ```
 
 ### Peer Dependencies
@@ -39,7 +39,7 @@ yarn add react-native-reanimated
 
 ```tsx
 import React from "react";
-import { SharedViewProvider } from "react-native-shared-element-transition";
+import { SharedViewProvider } from "react-native-shared-view-transition";
 
 export default function App() {
   return <SharedViewProvider>{/* Your app content */}</SharedViewProvider>;
@@ -48,12 +48,12 @@ export default function App() {
 
 ### 2. Configure Route Animations (Expo Router)
 
-For Expo Router, you need to disable default route animations **only in the local stack** where shared element transitions are used. Parent stacks can keep their animations:
+For Expo Router, you need to disable default route animations **only in the local stack** where shared view transitions are used. Parent stacks can keep their animations:
 
 ```tsx
 // app/_layout.tsx - Parent stack can keep animations
 import { Stack } from "expo-router";
-import { SharedViewProvider } from "react-native-shared-element-transition";
+import { SharedViewProvider } from "react-native-shared-view-transition";
 
 export default function RootLayout() {
   return (
@@ -72,7 +72,7 @@ export default function RootLayout() {
 ```
 
 ```tsx
-// app/(tabs)/batches/_layout.tsx - Local stack with shared elements
+// app/(tabs)/batches/_layout.tsx - Local stack with shared views
 import { Stack } from "expo-router";
 
 export default function BatchesLayout() {
@@ -105,10 +105,7 @@ export default function BatchesLayout() {
 ```tsx
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import {
-  SharedView,
-  useSharedView,
-} from "react-native-shared-element-transition";
+import { SharedView, useSharedView } from "react-native-shared-view-transition";
 import { useRouter, usePathname } from "expo-router";
 
 export function SourceScreen() {
@@ -137,7 +134,7 @@ export function SourceScreen() {
         duration={400}
       >
         <View style={{ width: 100, height: 100, backgroundColor: "blue" }}>
-          <Text>Shared Element</Text>
+          <Text>Shared View</Text>
         </View>
       </SharedView>
     </TouchableOpacity>
@@ -150,7 +147,7 @@ export function SourceScreen() {
 ```tsx
 import React from "react";
 import { View, Text } from "react-native";
-import { SharedView } from "react-native-shared-element-transition";
+import { SharedView } from "react-native-shared-view-transition";
 
 export function DestinationScreen() {
   return (
@@ -162,7 +159,7 @@ export function DestinationScreen() {
         duration={400}
       >
         <View style={{ width: 200, height: 200, backgroundColor: "blue" }}>
-          <Text>Shared Element</Text>
+          <Text>Shared View</Text>
         </View>
       </SharedView>
     </View>
@@ -174,19 +171,19 @@ export function DestinationScreen() {
 
 ### SharedView
 
-The main component for creating shared element transitions.
+The main component for creating shared view transitions.
 
 #### Props
 
-| Prop          | Type                | Default  | Description                              |
-| ------------- | ------------------- | -------- | ---------------------------------------- |
-| `id`          | `string`            | -        | Unique identifier for the shared element |
-| `children`    | `React.ReactNode`   | -        | The element to animate                   |
-| `transition`  | `"move" \| "scale"` | `"move"` | Type of transition animation             |
-| `duration`    | `number`            | `300`    | Animation duration in milliseconds       |
-| `isSource`    | `boolean`           | `false`  | Whether this is the source element       |
-| `sourceRoute` | `string`            | -        | Route identifier for the current screen  |
-| `style`       | `ViewStyle`         | -        | Additional styles for the container      |
+| Prop          | Type                | Default  | Description                             |
+| ------------- | ------------------- | -------- | --------------------------------------- |
+| `id`          | `string`            | -        | Unique identifier for the shared view   |
+| `children`    | `React.ReactNode`   | -        | The element to animate                  |
+| `transition`  | `"move" \| "scale"` | `"move"` | Type of transition animation            |
+| `duration`    | `number`            | `300`    | Animation duration in milliseconds      |
+| `isSource`    | `boolean`           | `false`  | Whether this is the source element      |
+| `sourceRoute` | `string`            | -        | Route identifier for the current screen |
+| `style`       | `ViewStyle`         | -        | Additional styles for the container     |
 
 #### Transition Types
 
@@ -222,7 +219,7 @@ Here's a real-world example based on the Upayee app integration:
 ```tsx
 // app/_layout.tsx
 import { Stack } from "expo-router";
-import { SharedViewProvider } from "react-native-shared-element-transition";
+import { SharedViewProvider } from "react-native-shared-view-transition";
 
 export default function RootLayout() {
   return (
@@ -253,10 +250,7 @@ export default function RootLayout() {
 // app/(tabs)/batches/index.tsx
 import React, { memo, useCallback } from "react";
 import { View, Text, TouchableOpacity, FlatList } from "react-native";
-import {
-  SharedView,
-  useSharedView,
-} from "react-native-shared-element-transition";
+import { SharedView, useSharedView } from "react-native-shared-view-transition";
 import { useRouter, usePathname } from "expo-router";
 
 const BatchItem = memo(({ item, colors }) => {
@@ -313,7 +307,7 @@ export default function BatchesScreen() {
 // app/(tabs)/batches/[batchId].tsx
 import React from "react";
 import { View, Text, ScrollView, Image } from "react-native";
-import { SharedView } from "react-native-shared-element-transition";
+import { SharedView } from "react-native-shared-view-transition";
 import { useLocalSearchParams } from "expo-router";
 
 export default function BatchDetailsScreen() {
@@ -363,7 +357,7 @@ export default function BatchDetailsScreen() {
 
 #### 1. Route Animation Configuration
 
-**⚠️ CRITICAL**: You MUST disable default route animations **only in the local stack** where shared element transitions are used. Parent stacks can keep their animations.
+**⚠️ CRITICAL**: You MUST disable default route animations **only in the local stack** where shared view transitions are used. Parent stacks can keep their animations.
 
 ```tsx
 // app/_layout.tsx - Parent stack (can keep animations)
@@ -375,7 +369,7 @@ export default function BatchDetailsScreen() {
   <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
 </Stack>
 
-// app/(tabs)/batches/_layout.tsx - Local stack with shared elements
+// app/(tabs)/batches/_layout.tsx - Local stack with shared views
 <Stack
   screenOptions={{
     animation: "none", // ⚠️ REQUIRED only in this local stack
@@ -417,10 +411,10 @@ const handleNavigation = () => {
 ❌ **Don't forget to disable route animations in the local stack**
 
 ```tsx
-// BAD - will break shared element transitions
+// BAD - will break shared view transitions
 <Stack.Screen name="detail" options={{ animation: "slide_from_right" }} />
 
-// GOOD - disable only in the local stack with shared elements
+// GOOD - disable only in the local stack with shared views
 <Stack screenOptions={{ animation: "none" }}>
   <Stack.Screen name="detail" />
 </Stack>
@@ -469,11 +463,11 @@ const handlePress = () => {
 
 #### 1. Transitions Not Working
 
-**Problem**: Shared elements don't animate between screens.
+**Problem**: Shared views don't animate between screens.
 
 **Solutions**:
 
-- ✅ Ensure `animation: "none"` is set **only in the local stack** where shared elements are used
+- ✅ Ensure `animation: "none"` is set **only in the local stack** where shared views are used
 - ✅ Verify `isSource={true}` on source elements and `isSource={false}` on destination elements
 - ✅ Check that `setActiveTransition` is called before navigation
 - ✅ Ensure unique IDs are used consistently across screens
@@ -506,7 +500,7 @@ const handlePress = () => {
 
 - ✅ Ensure all required props are provided (`id`, `isSource`)
 - ✅ Use proper typing for `useSharedView` hook
-- ✅ Import types from the library: `import type { SharedViewProps } from "react-native-shared-element-transition"`
+- ✅ Import types from the library: `import type { SharedViewProps } from "react-native-shared-view-transition"`
 
 ### Debug Mode
 
