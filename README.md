@@ -21,14 +21,6 @@ A React Native library for smooth shared view transitions between screens using 
 - 🚀 **Expo Router Compatible**: Works seamlessly with Expo Router navigation
 - 🎭 **Context-Based**: Uses React Context for state management
 
-## Demo
-
-See the library in action! Watch this 17-second demo video showing smooth shared view transitions:
-
-https://github.com/NuZard84/react-native-shared-view-transition/blob/main/sample-vid.gif
-
-_The video demonstrates smooth card transitions between list and detail views, showcasing the library's seamless animations._
-
 ## Installation
 
 ```bash
