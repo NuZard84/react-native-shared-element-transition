@@ -8,10 +8,6 @@ A React Native library for smooth shared view transitions between screens using 
 
 **Watch the library in action!**
 
-[![Demo Video](https://img.shields.io/badge/📹_Watch_Demo-GIF-blue?style=for-the-badge)](https://github.com/NuZard84/react-native-shared-view-transition/blob/main/sample-vid.gif)
-
-_Click the badge above to see smooth shared view transitions in action!_
-
 ![Demo GIF](https://github.com/NuZard84/react-native-shared-view-transition/blob/main/sample-vid.gif?raw=true)
 
 ## Features
