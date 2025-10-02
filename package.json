@@ -1,6 +1,6 @@
 {
   "name": "react-native-shared-view-transition",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A React Native library for smooth shared view transitions between screens using React Native Reanimated",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
